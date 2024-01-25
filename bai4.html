@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Danhsach {
+        constructor(id, name, score) {
+            this.id = id
+            this.name = name
+            this.score = score
+        }
+        show() {
+            return '<th>'+'<td>' + this.id + '</td>' + '<td>' + this.name + '</td>' + '<td>'+this.score+'</td>'
+        }
+    }
+    let danhsach1 = new Danhsach(1,'Nguyễn Nhật Vỹ',10)
+    document.write(danhsach1.show()+'<br>')
+    let danhsach2 = new Danhsach(2,'Nguyễn Văn Thăng',10)
+    document.write(danhsach2.show()+'<br>')
+</script>
+</body>
+</html>
